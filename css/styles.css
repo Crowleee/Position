@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0; 
+}
+
+.card {
+    width: 30%;
+    padding-top: 30%;
+    /* position: relative; */
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.card__overlay {
+    position: absolute;
+    background-color: #c60ebe;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    color: #ffffff;
+    font-size: 36px;
+    font-family: sans-serif;
+    text-align: center;
+    z-index: -1;
+    opacity: 0;
+}
+
+.card:hover .card__overlay {
+    z-index: 1;
+    opacity: 0.8;
+}
+
+.card__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
